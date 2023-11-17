@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Images/picture/user.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/stingo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>My portfolio</title>
+    <script>
+        function submitForm() {
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+    
+            // Save data (you can send it to a server or use local storage, for simplicity using console.log)
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+    
+            // Display notification (for simplicity, using alert)
+            alert('Form submitted successfully!');
+
+            document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+
+      // Hide notification after 3 seconds (adjust as needed)
+      setTimeout(function() {
+        notification.style.display = 'none';
+      }, 3000);
+        }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#"><img src="Images/picture/port.jpg" width="60" height="65"></a></div>
+       
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="future.html">The Future</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+   <br><br><br><br>
+   <section class="container contact" id="contact">
+    <div class="contact-container">
+        
+        <div class="contact-content-con">
+            <div class="left-contact">
+                
+                <h4>Welcome to my digital haven</h4>
+
+                <p>
+                    Delve into a world of creativity and passion, where ideas transform into tangible realities. Discover a portfolio brimming with innovative designs, captivating stories, and solutions that resonate with your vision. Let's collaborate and bring your dreams to life.
+                </p>
+                <h4>Contact me here</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                             <a href="https://maps.app.goo.gl/QcsQEDvqndRhKVgJ6" target="_blank"><span>Location</span></a>
+
+                        </div>
+                        <p>
+                            : Kenya,  Nairobi 
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:jmengo9482@gmail.com@gmail.com">Email Me <i class="fa fa-envelope" ></i></a></span>
+                        </div>
+                        <p>
+                            <span>: jmengo9482@gmail.com@gmail.com</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-user-graduate"></i>
+                            <a href="https://maps.app.goo.gl/BxSTEhJKJWSwJBab7" target="_blank"><span>Education</span></a>
+                        </div>
+                        <p>
+                            <span>: Zetech University</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-user-graduate"></i>
+                            <a href="tel:+123456789"><span>Mobile Number</span></a>
+                        </div>
+                        <p>
+                            <span>: 0702932333</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>Languages</span>
+                        </div>
+                        <p>
+                            <span>:English, Kiswahili</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="https://www.facebook.com/Finessekim" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/@MentorWebDev" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/@zetech_university" target="_blank">
+                            <i class="fab fa-instagram" ></i>
+                        </a>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="right-contact">
+                <form action="" class="contact-form">
+                    <div class="input-control i-c-2">
+                      
+                        <input type="text" id="name" name="name" required placeholder="YOUR NAME">
+
+                       
+                        <input type="email" id="email" name="email" required placeholder="YOUR EMAIL">
+                    </div>
+                   
+                    <div class="input-control">
+                       
+                        
+
+                        <textarea id="message" name="message" rows="4"   placeholder="Message Here..."  required></textarea>
+                    </div>
+                    <div>
+                        
+                            <button  class="customButton" type="button" onclick="submitForm()">Submit</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+   </body>
+</html>
